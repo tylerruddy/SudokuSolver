@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0B59ABAD-27E8-4E07-8311-E1F6CE9197E8</key>
+		<key>38E1A9B8-C2D2-4BFC-ADA5-39E1C9CBFDBF</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>0B59ABAD-27E8-4E07-8311-E1F6CE9197E8.xcactivitylog</string>
+			<string>38E1A9B8-C2D2-4BFC-ADA5-39E1C9CBFDBF.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,13 +32,217 @@
 			<key>signature</key>
 			<string>Run sudoku_solver</string>
 			<key>timeStartedRecording</key>
-			<real>611735929.15272999</real>
+			<real>611741269.20589399</real>
 			<key>timeStoppedRecording</key>
-			<real>611735940.72886395</real>
+			<real>611741270.65594101</real>
 			<key>title</key>
 			<string>Run sudoku_solver</string>
 			<key>uniqueIdentifier</key>
-			<string>0B59ABAD-27E8-4E07-8311-E1F6CE9197E8</string>
+			<string>38E1A9B8-C2D2-4BFC-ADA5-39E1C9CBFDBF</string>
+		</dict>
+		<key>419E7254-431A-46FD-A943-04B96967DFF6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>419E7254-431A-46FD-A943-04B96967DFF6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611741423.70956802</real>
+			<key>timeStoppedRecording</key>
+			<real>611741430.79189205</real>
+			<key>title</key>
+			<string>Run sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>419E7254-431A-46FD-A943-04B96967DFF6</string>
+		</dict>
+		<key>4462E49B-5E74-481C-9062-2801A8E5641F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4462E49B-5E74-481C-9062-2801A8E5641F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611740986.78530896</real>
+			<key>timeStoppedRecording</key>
+			<real>611741066.22278702</real>
+			<key>title</key>
+			<string>Run sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>4462E49B-5E74-481C-9062-2801A8E5641F</string>
+		</dict>
+		<key>695A2D8B-7600-452A-9F00-0C8632B96F0E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>695A2D8B-7600-452A-9F00-0C8632B96F0E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611739718.12162101</real>
+			<key>timeStoppedRecording</key>
+			<real>611739721.65726304</real>
+			<key>title</key>
+			<string>Run sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>695A2D8B-7600-452A-9F00-0C8632B96F0E</string>
+		</dict>
+		<key>6C09E472-FED3-40EB-86AD-73DEA1435232</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6C09E472-FED3-40EB-86AD-73DEA1435232.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611741344.87829804</real>
+			<key>timeStoppedRecording</key>
+			<real>611741381.59902501</real>
+			<key>title</key>
+			<string>Run sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>6C09E472-FED3-40EB-86AD-73DEA1435232</string>
+		</dict>
+		<key>A6E9E05C-FE7A-465F-BE26-BF9221D0EA99</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A6E9E05C-FE7A-465F-BE26-BF9221D0EA99.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611741067.25384903</real>
+			<key>timeStoppedRecording</key>
+			<real>611741097.65607595</real>
+			<key>title</key>
+			<string>Run sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>A6E9E05C-FE7A-465F-BE26-BF9221D0EA99</string>
+		</dict>
+		<key>E16D9BDE-E46E-4154-A542-78AB74A38ABB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E16D9BDE-E46E-4154-A542-78AB74A38ABB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611741281.20058501</real>
+			<key>timeStoppedRecording</key>
+			<real>611741282.47891104</real>
+			<key>title</key>
+			<string>Run sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>E16D9BDE-E46E-4154-A542-78AB74A38ABB</string>
 		</dict>
 	</dict>
 </dict>
