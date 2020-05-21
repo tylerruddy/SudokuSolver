@@ -5,6 +5,41 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>F63572BF-DA6E-4DB6-81F6-05B73EBA86A8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F63572BF-DA6E-4DB6-81F6-05B73EBA86A8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611735928.03864205</real>
+			<key>timeStoppedRecording</key>
+			<real>611735929.13888597</real>
+			<key>title</key>
+			<string>Build sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>F63572BF-DA6E-4DB6-81F6-05B73EBA86A8</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
