@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>01E1B8E8-CA84-4DEB-86E8-9BB240E42BBA</string>
 		</dict>
+		<key>09263AB1-54B0-44EF-8AAE-A9209B1EDE4A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>09263AB1-54B0-44EF-8AAE-A9209B1EDE4A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611746673.32306504</real>
+			<key>timeStoppedRecording</key>
+			<real>611746673.98668301</real>
+			<key>title</key>
+			<string>Build sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>09263AB1-54B0-44EF-8AAE-A9209B1EDE4A</string>
+		</dict>
 		<key>0B51E9F5-51A5-4D16-8764-0A1DC4502A22</key>
 		<dict>
 			<key>className</key>
@@ -380,6 +414,40 @@
 			<key>uniqueIdentifier</key>
 			<string>49485FDC-B5CB-4C38-9B31-DB9AA275A048</string>
 		</dict>
+		<key>53420647-49F5-4252-9A28-CEBC69E6B6EB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>53420647-49F5-4252-9A28-CEBC69E6B6EB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611746596.061795</real>
+			<key>timeStoppedRecording</key>
+			<real>611746596.86392498</real>
+			<key>title</key>
+			<string>Build sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>53420647-49F5-4252-9A28-CEBC69E6B6EB</string>
+		</dict>
 		<key>5AE3675C-1E25-4843-AFE2-D7A9C3CCEC22</key>
 		<dict>
 			<key>className</key>
@@ -516,6 +584,40 @@
 			<key>uniqueIdentifier</key>
 			<string>65EE979A-02F2-4FEE-92D6-9FBB4C54521D</string>
 		</dict>
+		<key>6CE5A6DB-2C79-443C-BDDC-EF06AD64DF30</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6CE5A6DB-2C79-443C-BDDC-EF06AD64DF30.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611746685.35546696</real>
+			<key>timeStoppedRecording</key>
+			<real>611746686.07195997</real>
+			<key>title</key>
+			<string>Build sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>6CE5A6DB-2C79-443C-BDDC-EF06AD64DF30</string>
+		</dict>
 		<key>75C910EC-ABC3-45A5-AABA-662B9044C759</key>
 		<dict>
 			<key>className</key>
@@ -583,6 +685,40 @@
 			<string>Build sudoku_solver</string>
 			<key>uniqueIdentifier</key>
 			<string>79131ACD-C7C5-4DF3-B768-56073DF11A5E</string>
+		</dict>
+		<key>79FFAC3F-BA6F-4FDB-A5ED-B900C0821008</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>79FFAC3F-BA6F-4FDB-A5ED-B900C0821008.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611746589.47219205</real>
+			<key>timeStoppedRecording</key>
+			<real>611746590.22120905</real>
+			<key>title</key>
+			<string>Build sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>79FFAC3F-BA6F-4FDB-A5ED-B900C0821008</string>
 		</dict>
 		<key>7CC685FF-B84F-492F-9F83-D997B6E0BB03</key>
 		<dict>
@@ -923,6 +1059,40 @@
 			<string>Build sudoku_solver</string>
 			<key>uniqueIdentifier</key>
 			<string>AD588339-730F-4628-81C3-3C3A8ACC0EB7</string>
+		</dict>
+		<key>AEB7C0AE-6D1F-44CB-962F-354538E3C10F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AEB7C0AE-6D1F-44CB-962F-354538E3C10F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>sudoku_solver project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>sudoku_solver</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build sudoku_solver</string>
+			<key>timeStartedRecording</key>
+			<real>611746569.18982399</real>
+			<key>timeStoppedRecording</key>
+			<real>611746570.00156999</real>
+			<key>title</key>
+			<string>Build sudoku_solver</string>
+			<key>uniqueIdentifier</key>
+			<string>AEB7C0AE-6D1F-44CB-962F-354538E3C10F</string>
 		</dict>
 		<key>AFB0C933-B401-41E2-8130-7768CB82F7B1</key>
 		<dict>

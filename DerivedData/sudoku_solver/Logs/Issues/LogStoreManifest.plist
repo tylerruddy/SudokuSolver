@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>9893139E-9E8B-41EF-8E4B-539373F734B9</key>
+		<key>6097D478-F267-46D3-ACE1-E7F36611438C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,24 +15,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>9893139E-9E8B-41EF-8E4B-539373F734B9.xcactivitylog</string>
+			<string>6097D478-F267-46D3-ACE1-E7F36611438C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
 			<string>sudoku_solver-bxkiwzvyqwalgrdlxhuozvicvyvx</string>
 			<key>timeStartedRecording</key>
-			<real>611745351.82159603</real>
+			<real>611746685.38828599</real>
 			<key>timeStoppedRecording</key>
-			<real>611745352.46126699</real>
+			<real>611746686.06621695</real>
 			<key>title</key>
 			<string>Build target sudoku_solver</string>
 			<key>uniqueIdentifier</key>
-			<string>9893139E-9E8B-41EF-8E4B-539373F734B9</string>
+			<string>6097D478-F267-46D3-ACE1-E7F36611438C</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
