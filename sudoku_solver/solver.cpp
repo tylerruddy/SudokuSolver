@@ -18,9 +18,9 @@ void solver(int (&board)[9][9], int row, int col, bool& solution);
 
 void print_board(int (&board)[9][9]);
 
-bool diagonal = false;
+bool diagonal = true;
 
-bool knight = false;
+bool anti_knight = true;
 
 int main() {
     cout << setprecision(5) << fixed;
@@ -45,7 +45,7 @@ int main() {
                       { 0, 0, 8, 5, 0, 0, 0, 1, 0 },
                       { 0, 9, 0, 0, 0, 0, 4, 0, 0 }};*/
     
-    int diagonal[9][9] = {{ 0, 4, 0, 3, 0, 0, 0, 8, 0 },
+    /*int diagonal[9][9] = {{ 0, 4, 0, 3, 0, 0, 0, 8, 0 },
                             { 0, 0, 3, 5, 0, 2, 0, 4, 0 },
                             { 0, 0, 0, 0, 0, 1, 5, 0, 3 },
                             { 0, 0, 2, 4, 0, 0, 1, 0, 0 },
@@ -53,15 +53,25 @@ int main() {
                             { 0, 0, 7, 0, 0, 3, 8, 0, 0 },
                             { 1, 0, 8, 2, 0, 0, 0, 0, 0 },
                             { 0, 7, 0, 1, 0, 8, 4, 0, 0 },
-                            { 0, 2, 0, 0, 0, 9, 0, 1, 0 }};
+                            { 0, 2, 0, 0, 0, 9, 0, 1, 0 }};*/
+    
+    int knight[9][9] = {{6, 0, 0, 0, 0, 0, 0, 8, 9},
+                        {0, 0, 0, 0, 0, 0, 0, 0, 0},
+                        {0, 0, 1, 2, 3, 0, 0, 0, 0},
+                        {0, 0, 4, 5, 6, 0, 0, 0, 0},
+                        {0, 0, 7, 8, 9, 0, 0, 0, 0},
+                        {0, 0, 0, 0, 0, 0, 4, 0, 0},
+                        {0, 0, 0, 0, 0, 2, 0, 0, 0},
+                        {3, 0, 0, 0, 0, 0, 0, 1, 2},
+                        {7, 0, 0, 0, 0, 0, 0, 4, 5}};
     
     bool solution = false;
     auto start = chrono::high_resolution_clock::now();
-    solver(diagonal, 0, 0, solution);
+    solver(knight, 0, 0, solution);
     
     
     if (solution)
-        print_board(diagonal);
+        print_board(knight);
     else
         cout << "No Solution!\n";
     auto end = chrono::high_resolution_clock::now();
@@ -78,26 +88,18 @@ bool violation(int (&board)[9][9], int row, int col) {
     
     // Check other rows and columns to see if violation
     for (int i = 0; i < 8; ++i) {
-        if (i != row) {
-            if (board[i][col] == curr_val)
-                return true;
-        }
-        if (i != col) {
-            if (board[row][i] == curr_val)
-                return true;
-        }
+        if (i != row && board[i][col] == curr_val)
+            return true;
+        if (i != col && board[row][i] == curr_val)
+            return true;
     } // for i
     
     // Check 3x3 box for violation
-    int r_pos = row / 3;
-    int c_pos = col / 3;
+    int r_pos = row / 3, c_pos = col / 3;
     for (int r = r_pos * 3; r < (r_pos + 1) * 3; ++r) {
         for (int c = c_pos * 3; c < (c_pos + 1) * 3; ++c) {
-            if (row != r && col != c) {
-                if (curr_val == board[r][c])
+            if (row != r && col != c && curr_val == board[r][c])
                     return true;
-            }
-            
         } // for f
     } // for r
     
@@ -105,22 +107,30 @@ bool violation(int (&board)[9][9], int row, int col) {
     if (diagonal) {
         if (row == col) {
             for (int i = 0; i < 9; ++i) {
-                if (i != row) {
-                    if (board[i][i] == curr_val)
-                        return true;
-                }
+                if (i != row && board[i][i] == curr_val)
+                    return true;
             } // for i
         } /* if \ */
         
         if (row + col == 8) {
             for (int i = 0; i < 9; ++i) {
-                if (i != row) {
-                    if (board[i][8 - i] == curr_val)
-                        return true;
-                }
+                if (i != row && board[i][8 - i] == curr_val)
+                    return true;
             } // for i
         } // if /
     } // if diagonal puzzle
+    
+    if (anti_knight) {
+        if ((row - 2 >= 0 && col - 1 >= 0 && curr_val == board[row - 2][col - 1]) ||
+            (row - 2 >= 0 && col + 1 <= 8 && curr_val == board[row - 2][col + 1]) ||
+            (row + 2 <= 8 && col - 1 >= 0 && curr_val == board[row + 2][col - 1]) ||
+            (row + 2 <= 8 && col + 1 <= 8 && curr_val == board[row + 2][col + 1]) ||
+            (row - 1 >= 0 && col - 2 >= 0 && curr_val == board[row - 1][col - 2]) ||
+            (row - 1 >= 0 && col + 2 <= 8 && curr_val == board[row - 1][col + 2]) ||
+            (row + 1 <= 8 && col - 2 >= 0 && curr_val == board[row + 1][col - 2]) ||
+            (row + 1 <= 8 && col + 2 <= 8 && curr_val == board[row + 1][col + 2]))
+            return true;
+    } // if knight puzzle
     
     // If no violations, return false
     return false;
