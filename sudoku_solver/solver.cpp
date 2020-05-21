@@ -7,61 +7,70 @@
 //
 
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <chrono>
+#include <iomanip>
 
 using namespace std;
 
-bool violation(vector<vector<int>>& board, int row, int col);
+bool violation(int (&board)[9][9], int row, int col);
 
-void solver(vector<vector<int>>& board, int row, int col, bool& solution);
+void solver(int (&board)[9][9], int row, int col, bool& solution);
 
-void print_grid(vector<vector<int>>& board);
-
-void update_square(int& row, int& col);
-
-void revert_square(int& row, int& col);
+void print_board(int (&board)[9][9]);
 
 int main() {
-    vector<vector<int>> example = { { 0, 3, 0, 0, 1, 0, 0, 6, 0 },
-                                    { 7, 5, 0, 0, 3, 0, 0, 4, 8 },
-                                    { 0, 0, 6, 9, 8, 4, 3, 0, 0 },
-                                    { 0, 0, 3, 0, 0, 0, 8, 0, 0 },
-                                    { 9, 1, 2, 0, 0, 0, 6, 7, 4 },
-                                    { 0, 0, 4, 0, 0, 0, 5, 0, 0 },
-                                    { 0, 0, 1, 6, 7, 5, 2, 0, 0 },
-                                    { 6, 8, 0, 0, 9, 0, 0, 1, 5 },
-                                    { 0, 9, 0, 0, 4, 0, 0, 3, 0 }};
+    cout << setprecision(5) << fixed;
+    int easy[9][9] = { { 0, 3, 0, 0, 1, 0, 0, 6, 0 },
+                         { 7, 5, 0, 0, 3, 0, 0, 4, 8 },
+                         { 0, 0, 6, 9, 8, 4, 3, 0, 0 },
+                         { 0, 0, 3, 0, 0, 0, 8, 0, 0 },
+                         { 9, 1, 2, 0, 0, 0, 6, 7, 4 },
+                         { 0, 0, 4, 0, 0, 0, 5, 0, 0 },
+                         { 0, 0, 1, 6, 7, 5, 2, 0, 0 },
+                         { 6, 8, 0, 0, 9, 0, 0, 1, 5 },
+                         { 0, 9, 0, 0, 4, 0, 0, 3, 0 }};
+
+    // MAYBE TRY TO CODE DIAGONAL AND KNIGHT CHESS
+    /*int hard[9][9] = {{ 8, 0, 0, 0, 0, 0, 0, 0, 0 },
+                      { 0, 0, 3, 6, 0, 0, 0, 0, 0 },
+                      { 0, 7, 0, 0, 9, 0, 2, 0, 0 },
+                      { 0, 5, 0, 0, 0, 7, 0, 0, 0 },
+                      { 0, 0, 0, 0, 4, 5, 7, 0, 0 },
+                      { 0, 0, 0, 1, 0, 0, 0, 3, 0 },
+                      { 0, 0, 1, 0, 0, 0, 0, 6, 8 },
+                      { 0, 0, 8, 5, 0, 0, 0, 1, 0 },
+                      { 0, 9, 0, 0, 0, 0, 4, 0, 0 }};*/
+    
     bool solution = false;
-    solver(example, 0, 0, solution);
+    auto start = chrono::high_resolution_clock::now();
+    solver(easy, 0, 0, solution);
     if (solution)
-        print_grid(example);
+        print_board(easy);
     else
         cout << "No Solution!\n";
+    auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> elapsed = end - start;
+    cout << "Elapsed time: " << elapsed.count() << " seconds!" << endl;
     return 0;
 }
 
-bool violation(vector<vector<int>>& board, int row, int col) {
-    revert_square(row, col);
+bool violation(int (&board)[9][9], int row, int col) {
+    // Adjust row and column so you are checking the position that was updated
     int curr_val = board[row][col];
     if (curr_val == 0)
         return false;
     
-    // Check other rows to see if violation
-    for (int r = 0; r < 8; ++r) {
-        if (r != row) {
-            if (board[r][col] == curr_val)
+    // Check other rows and columns to see if violation
+    for (int i = 0; i < 8; ++i) {
+        if (i != row) {
+            if (board[i][col] == curr_val)
                 return true;
         }
-    } // for r
-    
-    // Check other columns to see if violation
-    for (int c = 0; c < 8; ++c) {
-        if (c != col) {
-            if (board[row][c] == curr_val)
+        if (i != col) {
+            if (board[row][i] == curr_val)
                 return true;
         }
-    } // for r
+    } // for i
     
     // Check 3x3 box for violation
     int r_pos = row / 3;
@@ -80,11 +89,17 @@ bool violation(vector<vector<int>>& board, int row, int col) {
     return false;
 } // violation();
 
-void solver(vector<vector<int>>& board, int row, int col, bool& solution) {
-    // If no violations
-    if (violation(board, row, col))
+// Recursively solves the puzzle
+void solver(int (&board)[9][9], int row, int col, bool& solution) {
+    // If not a viable solution stop trying this path
+    if (violation(board, row, col - 1))
         return;
     
+    // Adjust column and rows
+    if (col == 9) {
+        col = 0;
+        row++;
+    }
     
     // If end of puzzle
     if (row == 9 && col == 0) {
@@ -92,16 +107,15 @@ void solver(vector<vector<int>>& board, int row, int col, bool& solution) {
         return;
     } // if end of puzzle
     
+    
+    // Recursively try values for open squares
     if (board[row][col] != 0) {
-        update_square(row, col);
-        solver(board, row, col, solution);
+        solver(board, row, col + 1, solution);
     }
     else {
         for (int val = 1; val < 10; ++val) {
             board[row][col] = val;
-            update_square(row, col);
-            solver(board, row, col, solution);
-            revert_square(row, col);
+            solver(board, row, col + 1, solution);
             if (solution)
                 return;
         } // for i
@@ -109,34 +123,21 @@ void solver(vector<vector<int>>& board, int row, int col, bool& solution) {
     } // else
 } // solver()
 
-
-
-void print_grid(vector<vector<int>>& board) {
+// Prints solution
+void print_board(int (&board)[9][9]) {
     for (size_t row = 0; row < 9; ++row) {
+        if (row % 3 == 0 && row != 0)
+        cout << "---------------------" << endl;
         for (size_t col = 0; col < 9; ++col) {
+            if (col % 3 == 0 && col != 0)
+                cout << "| ";
             if (col != 8)
                 cout << board[row][col] << " ";
             else
                 cout << board[row][col];
         } // for col
         cout << endl;
+        
     } // for row
 } // print_grid()
 
-void update_square(int& row, int& col) {
-    if (col == 8) {
-        col = 0;
-        row++;
-    }
-    else
-        col++;
-} // update_square()
-
-void revert_square(int& row, int& col) {
-    if (col == 0 && row != 0) {
-        col = 8;
-        row--;
-    }
-    else if (col != 0)
-        col--;
-}
